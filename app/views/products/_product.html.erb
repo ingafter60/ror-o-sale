@@ -12,7 +12,8 @@
 
         <!-- Link -->
         <!-- <a href="detail-page.html"><%#= product[:name] %></a> -->
-        <%= link_to product[:name], "/products/1" %>
+        <%#= link_to product[:name], "/products/1" %>
+        <%= link_to product[:name], product_path(product.id) %>
 
       </h5>
       <p class="card-text">
