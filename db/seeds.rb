@@ -5,3 +5,39 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+products = Product.create([
+
+	{
+		name: 'Name 1',
+		price: 99.99,
+		description: 'Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+	},
+	{
+		name: 'Name 2',
+		price: 57.99,
+		description: 'Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+	},
+	{
+		name: 'Name 3',
+		price: 28.99,
+		description: 'Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+	}
+])
+
+# DB QUERY
+# iing@iing-VirtualBox:~/Desktop/o_sale$ rails c
+# ...
+# get all product
+# 2.7.1 :001 > Product.all
+# get product with id=1 (if there was no product with id=1, it will trow an error)
+# 2.7.1 :001 > Product.find(1)
+# get product by id=1 (if there was no product with id=1, it will return nil or null)
+# 2.7.1 :001 > Product.find_by(id: 1)
+# get first product
+# 2.7.1 :001 > Product.first
+# get last product
+# 2.7.1 :001 > Product.last
+# get the total number of products
+# 2.7.1 :001 > Product.count
+# 
