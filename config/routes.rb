@@ -7,5 +7,9 @@ Rails.application.routes.draw do
   get '/products/:id', 
   	to: 'products#show', 
   	as: 'product'
+
+  # get all products, use index action in products controller
+  get '/products',
+  	to: 'products#index' 
   
 end
